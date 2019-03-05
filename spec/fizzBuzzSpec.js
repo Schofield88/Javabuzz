@@ -1,20 +1,8 @@
 describe('Fizzbuzz', function() {
 
-  var fizzBuzz;
-
-  beforeEach(function() {
-    fizzBuzz = new Fizzbuzz();
+    it('is divisible by 3', function() {
+      var fb = new fizzBuzz();
+      expect(fb.by3(6)).toBe('Fizz');
   });
 
-  describe('multiples of 3', function() {
-    it('fizzes for 3', function() {
-      expect(fizzBuzz.play(3)).toEqual('Fizz');
-    });
-  });
-
-  describe('multiples of 5', function() {
-    it('buzzes for 5', function() {
-      expect(fizzBuzz.play(5)).toEqual('Buzz');
-    });
-  });
 });
